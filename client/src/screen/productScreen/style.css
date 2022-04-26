@@ -1,0 +1,131 @@
+.productScreen {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.productScreenLeft {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.productImgContainer {
+  width: 70%;
+  height: 65vh;
+}
+.productImg {
+  width: 100%;
+  height: 100%;
+}
+.productScreenRight {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 4em;
+}
+.productScreenRightText {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.productScreenRightText > h1 {
+  margin-bottom: 1em;
+}
+.priceContainer {
+  display: flex;
+  margin-bottom: 1em;
+}
+.priceContainer > h2 {
+  font-size: 1.3em;
+}
+.priceRight {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0.5em;
+}
+.priceRight > del {
+  font-size: 0.8em;
+  margin-left: 0.5em;
+}
+.textTitle {
+  margin-top: 2em;
+}
+.productForm {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+}
+.formDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1.5em;
+}
+.formDiv > span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+.inputContainer {
+  display: flex;
+  border-radius: 0.3rem;
+  border: 1px solid grey;
+  align-items: center;
+  padding: 0.4rem;
+}
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.selectContainer {
+  display: flex;
+  border-radius: 0.3rem;
+  border: 1px solid grey;
+  align-items: center;
+  padding: 0.4rem;
+  cursor: pointer;
+}
+.submitBtn {
+  padding: 0.4rem;
+  color: white;
+  cursor: pointer;
+  background: green;
+  border: none;
+  border-radius: 0.4em;
+  width: 180px;
+}
+/* .submitBtn{
+
+} */
+
+@media screen and (max-width: 850px) {
+  .productScreen {
+    flex-direction: column;
+  }
+  .productScreenLeft {
+    width: 100%;
+    margin-bottom: 4em;
+  }
+
+  .productImgContainer {
+    width: 100%;
+  }
+  .productScreenRight {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 390px) {
+  .productImgContainer {
+    height: 30vh;
+  }
+  .productScreenRight {
+    width: 100%;
+    align-items: center;
+  }
+}
